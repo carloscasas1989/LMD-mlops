@@ -1,0 +1,18 @@
+stages:
+  prep:
+    cmd: python src/data_prep.py --params params.yaml
+    deps:
+    - src/data_prep.py
+    - params.yaml
+    - data/raw
+    outs:
+    - data/processed/churn_clean.csv
+  train:
+    cmd: python src/train.py --params params.yaml
+    deps:
+    - src/train.py
+    - params.yaml
+    - data/processed/churn_clean.csv
+    outs:
+    - artifacts/model.pkl
+    - artifacts/metrics.json
