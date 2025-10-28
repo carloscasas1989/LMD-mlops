@@ -14,13 +14,21 @@ Forma parte del trabajo práctico del curso
 4. **Registra experimentos** y resultados en DagsHub
 
 >## Estructura principal
+
 LMD-mlops/
+
 ├── data/ # Datos crudos y procesados
+
 ├── src/ # Scripts de preprocesamiento y entrenamiento
+
 ├── artifacts/ # Modelo entrenado y métricas
+
 ├── params.yaml # Parámetros del modelo
+
 ├── dvc.yaml # Definición del pipeline
+
 └── README.md
+
 
 ## Tecnologías usadas
 
