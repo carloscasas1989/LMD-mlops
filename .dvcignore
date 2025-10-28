@@ -1,3 +1,1 @@
-# Permitir rastrear estructura de carpetas sin datos pesados
-data/raw/*
-!data/raw/.gitkeep
+artifacts/echo data/processed/
