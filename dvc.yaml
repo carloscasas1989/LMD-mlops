@@ -15,4 +15,5 @@ stages:
     - data/processed/churn_clean.csv
     outs:
     - artifacts/model.pkl
+    metrics:
     - artifacts/metrics.json
