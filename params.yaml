@@ -1,0 +1,17 @@
+data:
+  raw_path: data/raw/churn.csv
+  processed_path: data/processed/churn_clean.csv
+  target: churn
+features:
+  drop_cols:
+  - customer_id
+  numeric_impute: median
+model:
+  type: logreg
+  test_size: 0.2
+  random_state: 42
+  C: 1.0
+  max_iter: 500
+artifacts:
+  model_path: artifacts/model.pkl
+  metrics_path: artifacts/metrics.json

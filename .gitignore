@@ -1,0 +1,13 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Envs
+.venv/
+.env
+.env.*
+
+# Data & artifacts
+data/processed/
+artifacts/
