@@ -10,8 +10,8 @@ stages:
       nfiles: 4
     - path: params.yaml
       hash: md5
-      md5: 60a8ec4745281397857dbc18156657e5
-      size: 333
+      md5: 4be491b0792b17e6ad7ed6e19c030b68
+      size: 350
     - path: src/data_prep.py
       hash: md5
       md5: 417552e188ecc4bb181d2849fd77ebe4
@@ -30,8 +30,8 @@ stages:
       size: 783359
     - path: params.yaml
       hash: md5
-      md5: 60a8ec4745281397857dbc18156657e5
-      size: 333
+      md5: 4be491b0792b17e6ad7ed6e19c030b68
+      size: 350
     - path: src/train.py
       hash: md5
       md5: 374ed5ab8e013b875c09ae6c17ff77c4
@@ -39,9 +39,9 @@ stages:
     outs:
     - path: artifacts/metrics.json
       hash: md5
-      md5: a29ada7f055d7f0c632b7f1eefe0dd67
-      size: 87
+      md5: e415cf97944ff658a9bc5aa7eba8f9d2
+      size: 88
     - path: artifacts/model.pkl
       hash: md5
-      md5: 51c8a67d25fe4e0b622ba5c48e10b82a
+      md5: 346a5665d1bcc7fa869f3b35fb77fb91
       size: 5838
