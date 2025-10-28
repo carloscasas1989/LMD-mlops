@@ -44,11 +44,20 @@ LMD-mlops/
 
 ## Etapas del proyecto
 
-1.	Configuración inicial del entorno y repositorio	**-Completada**
-2️. Preparación y limpieza de datos	**-Completada**
-3️. Entrenamiento del modelo base	**-Completada**
-4️. Experimentación y ajuste de hiperparámetros	 **En progreso**
+1.Configuración inicial del entorno y repositorio	
+**-Completada**
+
+2️. Preparación y limpieza de datos
+**-Completada**
+
+3️. Entrenamiento del modelo base	
+**-Completada**
+
+4️. Experimentación y ajuste de hiperparámetros	 
+**En progreso**
 
 **Autor**
 
 Carlos Casas
+
+https://github.com/carloscasas1989/LMD-mlops
