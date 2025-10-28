@@ -1,0 +1,47 @@
+schema: '2.0'
+stages:
+  prep:
+    cmd: python src/data_prep.py --params params.yaml
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: 8d97374ea89bd004fca42852b4bb4cd0.dir
+      size: 873478
+      nfiles: 4
+    - path: params.yaml
+      hash: md5
+      md5: 60a8ec4745281397857dbc18156657e5
+      size: 333
+    - path: src/data_prep.py
+      hash: md5
+      md5: 417552e188ecc4bb181d2849fd77ebe4
+      size: 1667
+    outs:
+    - path: data/processed/churn_clean.csv
+      hash: md5
+      md5: ea414c80f0cff08fa50d14694953949e
+      size: 783359
+  train:
+    cmd: python src/train.py --params params.yaml
+    deps:
+    - path: data/processed/churn_clean.csv
+      hash: md5
+      md5: ea414c80f0cff08fa50d14694953949e
+      size: 783359
+    - path: params.yaml
+      hash: md5
+      md5: 60a8ec4745281397857dbc18156657e5
+      size: 333
+    - path: src/train.py
+      hash: md5
+      md5: 374ed5ab8e013b875c09ae6c17ff77c4
+      size: 2925
+    outs:
+    - path: artifacts/metrics.json
+      hash: md5
+      md5: a29ada7f055d7f0c632b7f1eefe0dd67
+      size: 87
+    - path: artifacts/model.pkl
+      hash: md5
+      md5: 51c8a67d25fe4e0b622ba5c48e10b82a
+      size: 5838
