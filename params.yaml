@@ -10,8 +10,8 @@ model:
   type: logreg
   test_size: 0.2
   random_state: 42
-  C: 3.0
-  max_iter: 500
+  C: 5.0
+  max_iter: 1500
 artifacts:
   model_path: artifacts/model.pkl
   metrics_path: artifacts/metrics.json
