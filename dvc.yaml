@@ -17,3 +17,14 @@ stages:
     - artifacts/model.pkl
     metrics:
     - artifacts/metrics.json
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+      - src/evaluate.py
+      - artifacts/model.pkl
+      - data/processed/churn_clean.csv
+    metrics:
+      - artifacts/metrics_eval.json
+    outs:
+      - artifacts/roc_curve.png
+      - artifacts/conf_matrix.png
