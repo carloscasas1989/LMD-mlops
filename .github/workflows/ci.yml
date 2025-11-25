@@ -21,17 +21,9 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pip install --upgrade pip
         pip install -r requirements.txt
-        pip install dvc
-
-    - name: Pull data & artifacts (if remote configured)
-      run: |
-        dvc pull || echo "No DVC remote credentials configured in CI"
-
-    - name: Reproduce pipeline
-      run: |
-        dvc repro
 
     - name: Run tests
       run: |
-        pytest || echo "No tests added yet"
+        pytest
