@@ -45,3 +45,31 @@ stages:
       hash: md5
       md5: 4694043dc24d4624eda23d81ecdeec2c
       size: 5838
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: artifacts/model.pkl
+      hash: md5
+      md5: 4694043dc24d4624eda23d81ecdeec2c
+      size: 5838
+    - path: data/processed/churn_clean.csv
+      hash: md5
+      md5: ea414c80f0cff08fa50d14694953949e
+      size: 783359
+    - path: src/evaluate.py
+      hash: md5
+      md5: 0a6eaeba91288cd03d9aac8bd837bd6f
+      size: 2389
+    outs:
+    - path: artifacts/conf_matrix.png
+      hash: md5
+      md5: c68ac4a5c52074795a473be952a2f0ad
+      size: 19939
+    - path: artifacts/metrics_eval.json
+      hash: md5
+      md5: 3807ba57cdf53b280c95f32e01ed3e2a
+      size: 1041
+    - path: artifacts/roc_curve.png
+      hash: md5
+      md5: 6843b5797d4f3cdf8e7f4d1c507e9a19
+      size: 29618
