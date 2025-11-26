@@ -27,24 +27,41 @@ Forma parte del trabajo práctico del curso
 LMD-mlops/
 
 │── data/
+
 │   ├── raw/                  # Datos crudos
+
 │   └── processed/            # Datos limpios
+
 │── src/
+
 │   ├── data_prep.py          # Limpieza y preparación de datos
+
 │   ├── train.py              # Entrenamiento del modelo
+
 │   ├── evaluate.py           # Métricas y gráficos
+
 │   └── api.py                # API REST con FastAPI
+
 │── artifacts/
 │   ├── model.pkl             # Modelo entrenado
+
 │   ├── metrics.json          # Métricas base
+
 │   ├── metrics_eval.json     # Métricas avanzadas
+
 │   ├── roc_curve.png         # Curva ROC
+
 │   └── conf_matrix.png       # Matriz de confusión
+
 │
 │── params.yaml               # Hiperparámetros
+
 │── dvc.yaml                  # Pipeline de DVC
+
 │── dvc.lock                  # Estado del pipeline ejecutado
+
 │── requirements.txt
+
 │── README.md
 
 
